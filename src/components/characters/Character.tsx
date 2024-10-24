@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const _NOOP = () => {};
+// const _NOOP = () => {};
 
 export const Character = ({ character, onFollow}) => {
     

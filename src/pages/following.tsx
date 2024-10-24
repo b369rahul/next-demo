@@ -11,11 +11,12 @@ export default function CharactersFollowing({characters}){
 
 }
 
-export async function getServerSideProps(){
-    let characters  = await getFollowedCharacters();
+export async function getStaticProps(){
+    const characters  = await getFollowedCharacters();
     return {
         props:{
             characters
-        }
+        },
+        revalidate: 5,
     }
 }

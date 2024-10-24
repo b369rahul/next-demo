@@ -1,5 +1,5 @@
 // In-memory storage (temporary, resets when server restarts)
-let tempStorage = new Set();
+const tempStorage = new Set();
 export default function handler(req, res) {
   if (req.method === 'POST') {
     // Handle POST request to store data

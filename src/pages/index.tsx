@@ -9,8 +9,8 @@ export default function AllCharacters({allCharacters}){
 
 
 export async function getStaticProps(){
-    let {characters} = await getCharacters();
-    let {results} = characters;
+    const {characters} = await getCharacters();
+    const {results} = characters;
     return {
         props:{
             allCharacters:results
