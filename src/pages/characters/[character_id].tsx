@@ -5,6 +5,7 @@ import { getFollowedCharacters } from "@/queries/followedCharacters";
 import { followCharacter, unFollowCharacter } from "@/mutations/follow";
 import { useCallback, useState } from "react";
 
+
 export default function CharacterPage({character, _isFollowed}){
     const [isFollowed, setIsFollowed] =useState(_isFollowed)
     const onFollow = useCallback(async(isFollowed)=>{
